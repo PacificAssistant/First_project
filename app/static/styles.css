@@ -1,0 +1,15 @@
+.spaced {
+    margin-bottom: 200px;
+}
+
+.yellow{
+    background-color: yellow;
+}
+.main_ava {
+    width: 200px;
+    height: auto;
+  }
+.post_ava {
+    width: 100px;
+    height: auto;
+  }

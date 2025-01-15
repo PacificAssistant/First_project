@@ -1,0 +1,23 @@
+<table>
+    <tr valign="top">
+        <td><td>{% if image_data %}
+        <img src="data:image/jpeg;base64,{{ image_data }}" alt="User Image" class="post_ava">
+            {% else %}
+        <img src="{{ user.avatar(64) }}">
+            {% endif %}</td></td>
+        <td>
+
+            <div>
+                <strong>{{ user.username }}</strong> каже:<br>
+                {{ post.text }}<br>
+                в: {{ post.time_post }} <br>
+            </div>
+
+            <form action="/delete_post" method="post" style="display:inline;">
+                <input type="hidden" name="post_id" value="{{ post.id }}">
+                <button type="submit">Delete</button>
+
+            </form>
+        </td>
+    </tr>
+</table>

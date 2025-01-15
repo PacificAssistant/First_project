@@ -1,0 +1,20 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Test</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='modal.css') }}">
+</head>
+<body>
+    <button id="openModalBtn">Open modal window</button>
+
+    <!-- Modal table -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Modal window</h2>
+            <p>Example of modal window </p>
+        </div>
+    </div>
+
+    <script src="../static/JavaScript/modal.js" defer></script>
+</body>

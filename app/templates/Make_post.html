@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <p class="yellow">
+    Here u can write ur mind
+    </p>
+    <h1>Create Post</h1>
+    <form method="POST" action="">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.post_body.label }}<br>
+            {{ form.post_body(rows=10, cols=40) }}
+        </p>
+        <p>{{ form.submit() }}</p>
+    </form>
+{% endblock %}
